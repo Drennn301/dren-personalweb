@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&family=Outfit:wght@200;300;400;500;600;700;800&family=PT+Sans:wght@400;700&family=Roboto:wght@100;400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+    /* New CSS Custom Classes */
+    .btn-black-red {
+      @apply bg-black hover:bg-crimson100 text-white font-bold py-2 px-3 rounded-lg
+      dark:bg-red-700 dark:hover:bg-crimson600
+      duration-300;
+    }
+
+    .btn-red-black {
+      @apply bg-myRed400 hover:bg-red-900 text-white font-bold py-2 px-3 rounded-lg
+      duration-300;
+    }
+
+    /* Navbar */
+    .navbar-fixed {
+      @apply fixed z-[9999] bg-white lg:bg-opacity-80 dark:bg-crimson800 dark:bg-opacity-75;
+      box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+    }
+
+    /* Content Wrap */
+    .content-wrap {
+      @apply rounded-lg shadow-xl overflow-hidden dark:shadow-xl dark:shadow-slate-300
+      dark:bg-crimson800
+      bg-white;
+    }
+
+    .image-wrap {
+     @apply w-[400px] h-[250px]
+                md:w-[300px] h-[190px] object-cover
+                lg:w-[400px] h-[260px] object-cover;
+    }
+
+
+    
+        /* 🖌 🖌 Blog Utilities */
+
+      .blog-container {
+        @apply container mx-auto pt-28 sm:pt-64 px-4;
+      }
+
+      .blog-content-title {
+        @apply text-center text-4xl sm:text-[70px] font-outfit font-semibold dark:text-white;
+      }
+      
+      .blog-content-subtitle {
+        @apply text-center text-2xl mt-4 sm:text-[40px] sm:mt-10 font-outfit font-semibold
+        text-slate-700 dark:text-slate-200;
+      }
+
+      .blog-content-image {
+        @apply mx-auto w-52 h-52 sm:mt-16 sm:w-[500px] sm:h-[500px]  mt-2 rounded-xl
+        dark:shadow-xl
+        dark:shadow-slate-300;
+      }
+
+      .blog-content-h {
+        @apply text-3xl my-6 font-bold sm:px-36 sm:text-4xl font-roboto
+        dark:text-white;
+      }
+
+      .blog-content-p {
+       @apply text-xl sm:text-2xl sm:px-36 sm:leading-normal font-roboto
+       dark:text-white;
+      }
+
+
+      .blog-title {
+        @apply text-center font-ptSans font-bold text-2xl truncate
+        dark:text-white ;
+      }
+
+      .blog-text {
+        @apply text-center px-4 pt-4 mb-5 text-slate-700 truncate
+        dark:text-white;
+      }
+
+
+
+
+    /* ⚒️ ⚒️ Project Utilities */
+      .project-title {
+        @apply text-center font-ptSans font-bold text-3xl truncate
+        dark:text-white;
+      }
+
+      .project-text {
+       @apply text-center text-xl p-3 mb-4 text-slate-700 truncate
+       dark:text-white;
+      }
+    
+
+
+    /* Burger Toggle */
+
+    .burger-line {
+      @apply w-[30px] h-1 my-1 block bg-black mr-3 mb-2 dark:bg-white;
+    }
+
+  .burger-active > span:nth-child(1){
+      @apply origin-top-left rotate-45 -translate-y-2;
+  }
+
+  .burger-active > span:nth-child(2){
+    @apply  origin-bottom-left -rotate-45 ;
+    }
+
+
+
+  
